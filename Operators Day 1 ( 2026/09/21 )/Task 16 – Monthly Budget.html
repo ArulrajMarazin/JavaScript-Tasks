@@ -11,7 +11,23 @@
 
     <script>
 
-        
+        var budget = 100000;
+        var rent = 30000;
+        var food = 20000;
+        var transport = 10000;
+        var internet = 5000;
+        var other = 8000;
+
+        var totalExpenses = rent + food + transport + internet + other;
+        console.log("Total Expenses :", totalExpenses);
+
+        var remainingBudget = budget - totalExpenses;
+        console.log("Remains after Expenses :", remainingBudget);
+
+        remainingBudget += 5000;    /* Extra Income */
+        remainingBudget -= 2000;    /* Additional expense */
+
+        console.log("Balance :", remainingBudget);
 
     </script>
 
