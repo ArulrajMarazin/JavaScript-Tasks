@@ -11,7 +11,19 @@
 
     <script>
 
-        
+        var previousReading = 1250;
+        var currentReading = 1480;
+        var pricePerUnit = 35;
+
+        var totalElectricityCharge = (currentReading - previousReading ) * pricePerUnit ;
+        console.log(totalElectricityCharge);
+
+        var serviceCharge = 500;
+        serviceCharge -= 200;   /* Discount */
+
+        var billAmount = totalElectricityCharge + serviceCharge;
+
+        console.log("Final Bill Amount :", billAmount);
 
     </script>
 
