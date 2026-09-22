@@ -11,7 +11,20 @@
 
     <script>
 
-        
+        var rice = 1200;
+        var chicken = 1500;
+        var drink = 400;
+
+        var totalCost = rice + chicken + drink;
+        console.log("Total Cost for Food :", totalCost );
+
+        var serviceCharge = (10*totalCost)/100;
+        var deliveryCharge = 300;
+
+        totalCost -= 500;
+
+        var billAmount = totalCost + serviceCharge + deliveryCharge;
+        console.log("Total Bill Amount to Pay", billAmount);
 
     </script>
 
