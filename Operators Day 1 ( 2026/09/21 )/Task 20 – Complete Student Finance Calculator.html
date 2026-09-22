@@ -11,7 +11,25 @@
 
     <script>
 
-        
+        var stdName = "Ahamed";
+        var courseFee = 100000;
+        var regFee = 5000;
+        var discount = 15000;
+
+        var fPayment = 25000;
+        var sPayment = 20000;
+        var tPayment = 10000;
+
+        courseFee -= discount;
+        courseFee -= ( discount + fPayment + sPayment + tPayment );
+        courseFee += 10000;
+        console.log(courseFee);
+
+        courseFee /= 4;
+        console.log(courseFee);
+
+        courseFee %= 4
+        console.log(courseFee);
 
     </script>
 
