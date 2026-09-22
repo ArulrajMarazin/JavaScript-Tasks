@@ -11,7 +11,24 @@
 
     <script>
 
+        var product = 2000;
+        var sellsTheProduct = 3000;
         
+        var totalsells = 25;
+
+        var totalPurchaseCost = product * totalsells;
+        console.log("Total Purchase Cost :", totalPurchaseCost);
+
+        var totalSalesRvenue = sellsTheProduct * totalsells;
+        console.log("Total Sales Revenue :", totalSalesRvenue);
+
+        var profit = totalSalesRvenue - totalPurchaseCost;
+        console.log("Profit :", profit);
+
+        profit += 5000;     /* Additional Income */
+        profit -= 3000;     /* Business Expencess */
+
+        console.log("Final Profit :", profit);
 
     </script>
 
