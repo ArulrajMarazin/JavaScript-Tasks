@@ -11,6 +11,19 @@
 
     <script>
 
+        var course = 60000;
+        course -= 10000;    /* Discount */
+        course -= 20000;    /* First payment */
+        course -= 5000;     /* Second payment */
+        console.log("Remaining Balance :", course);
+
+        var balance = course;
+
+        course /= 3;
+        console.log("Installment plan :", course);
+
+        balance %= 3;
+        console.log("Remainder :", balance);
         
 
     </script>
