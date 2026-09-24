@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var stock = 5;
+        var reorderLevel = 25;
+        var expiryDays = 30;
+
+        if ( stock <= 0 ){
+            console.log( "Out of Stock" );
+        }
+
+        else if ( stock < reorderLevel && expiryDays < 30 ){
+            console.log( "Low Stock & Near Expiry" );
+        }
+
+        if ( stock > reorderLevel && expiryDays > 30 ){
+            console.log( "Stock Available" );
+        }
+
+        else if ( stock > reorderLevel && expiryDays < 30 ){
+            console.log( "In Stock & Near Expiry" )
+        }
+        
+        else if ( stock < reorderLevel ){
+            console.log( "Low Stock" );
+        }
+
+        else if ( expiryDays < 30 ){
+            console.log( "Near Expiry" )
+        }
+
+    </script>
+
+</body>
+</html>
