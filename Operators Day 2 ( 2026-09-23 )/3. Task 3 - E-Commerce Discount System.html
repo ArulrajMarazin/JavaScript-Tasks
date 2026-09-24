@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var coupon = true;
+        var premiumCustomer = 8000;
+
+        console.log( "Preimum Customer Price :" + premiumCustomer );
+        if ( premiumCustomer >= 10000 ){
+            premiumCustomer = premiumCustomer - premiumCustomer * 20/100;
+            console.log( "Premium Customer with 20% discount" );
+            console.log( "Final Price ::" + premiumCustomer );
+        }
+
+        else {
+            premiumCustomer = premiumCustomer - premiumCustomer * 10/100;
+            console.log ( "Premium Customer with 10% discount" )
+            console.log( "Final Price ::" + premiumCustomer );
+            
+        }
+
+        premiumCustomer -= 500;
+        console.log( "After coupon discount price :" + premiumCustomer );
+        console.log ( "Premium Customer Final price :" + premiumCustomer );
+
+        console.log( "----------------------------------------------------------------" )
+
+        var regularCustomer = 10000;
+
+        console.log( "Regular Customer Price :" + regularCustomer );
+        if ( regularCustomer >= 10000 ){
+            regularCustomer = regularCustomer - regularCustomer * 10/100;
+            console.log( "Regular Customer with 10% discount" )
+            console.log( "Final Price ::" + regularCustomer );
+        }
+
+        else {
+            console.log( "Sorry...!! Your not eligible to discount yet" );
+        }
+
+        regularCustomer -= 500;
+        console.log( "After coupon discount price :" + regularCustomer );
+        console.log( "Regular Customer Final Price :" + regularCustomer );
+
+    </script>
+
+</body>
+</html>
