@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var employeeService = 3;
+        var rating = "B";
+
+        if ( employeeService >= 5 && rating == "A" ){
+            console.log( "Your eligible to 30% Bonus" );
+        }
+
+        else if ( employeeService >= 5 && rating == "B" ){
+            console.log( "Your eligible to 20% Bonus" );
+        }
+
+        else if ( employeeService >= 5 ) {
+            console.log( "Your eligible to 10% Bonus" );
+        }
+
+        else if ( employeeService < 5 && rating == "A" ){
+            console.log( "Your eligible to 15% Bonus" );
+        }
+
+        else {
+            console.log( "Your eligible to 5% Bonus" );
+        }
+
+    </script>
+
+</body>
+</html>
