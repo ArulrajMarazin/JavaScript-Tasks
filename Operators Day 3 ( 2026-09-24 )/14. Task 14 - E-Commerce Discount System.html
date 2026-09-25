@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let isCustomerRegistered = true;
+        let isAbleToDiscountAmount = true;
+        let isThisCustomerVip = false;
+
+        if( isCustomerRegistered == true ){
+
+            if( isAbleToDiscountAmount == true ){
+
+                if( isThisCustomerVip == true ){
+                    console.log( "Your are able to get discount" );
+                }
+
+                else{
+                    console.log( "You need to be a VIP customer" );
+                }
+
+            }
+
+            else{
+                console.log( "need to buy more for this discount" );
+            }
+
+        }
+
+        else{
+            console.log( "Your are need to register" );
+        }
+
+    </script>
+
+</body>
+</html>
