@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let isCustomerLoggedIn = true;
+        let isRoomAvailable = true;
+        let isPaid = true;
+
+        if( isCustomerLoggedIn == true ){
+
+            if( isRoomAvailable == true ){
+
+                if( isPaid == true ){
+                    console.log( "Here is the pass card" );
+                }
+
+                else{
+                    console.log( "You need to pay before getting the pass card" );
+                }
+
+            }
+
+            else{
+                console.log( "Sorry...! At this moment no more rooms available" );
+            }
+
+        }
+
+        else{
+            console.log( "You need to logged in before checking any rooms" );
+        }
+
+    </script>
+
+</body>
+</html>
