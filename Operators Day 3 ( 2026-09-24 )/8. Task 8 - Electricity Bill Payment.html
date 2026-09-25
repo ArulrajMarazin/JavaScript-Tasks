@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let isAccountActive = true;
+        let isAnyPendingBills = false;
+        let isPaymentSufficient = false;
+
+        if( isAccountActive == true ){
+
+            if( isAnyPendingBills == false ){
+
+                if( isPaymentSufficient == true ){
+                    console.log( "Your able to pay the amount" );
+                }
+
+                else{
+                    console.log( "You need to pay more to finish this payment" );
+                }
+
+            }
+
+            else {
+                console.log( "You have some pending payments" );
+            }
+
+        }
+
+        else{
+            console.log( "Your account not active" );
+        }
+
+    </script>
+
+</body>
+</html>
