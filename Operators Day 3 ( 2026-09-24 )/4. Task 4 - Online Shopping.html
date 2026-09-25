@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let isUserLoggedIn = false;
+        let isCartHasProduct = false;
+
+        if( isUserLoggedIn == true ){
+
+            if( isCartHasProduct == true ){
+                console.log( "Your can checkout now" );
+            }
+
+            else{
+                console.log( "Your cart doesn't have any product" );
+            }
+
+        }
+
+        else{
+            console.log( "Sorry...! Please Log in before Shopping" );
+        }
+
+    </script>
+
+</body>
+</html>
