@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let isValidTicket = true;
+        let isValidPassport = true;
+        let isMoreLeggageWeight = false;
+
+        if( isValidTicket == true ){
+
+            if( isValidPassport == true ){
+
+                if( isMoreLeggageWeight == false ){
+                    console.log( "You can check-in" );
+                }
+
+                else{
+                    console.log( "You have more weight than the limit... need to pay more" );
+                }
+
+            }
+
+            else{
+                console.log( "Your passport is not valid" );
+            }
+
+        }
+
+        else{
+            console.log( "This ticket is not valid" );
+        }
+
+    </script>
+
+</body>
+</html>
