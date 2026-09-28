@@ -9,23 +9,35 @@
     
     <script>
 
-        let pin = true;
-        let isEnoughBalance = true;
+        let enterPin = 123456;
+        let actualPin = 123456;
+        let enterAmount = 100;
+        let balance = 3000;
 
-        if( pin == true ){
+        if ( enterPin === actualPin ){
 
-            if( isEnoughBalance == true ){
-                console.log( "Your eligible to make withdrawal" );
+            if( enterAmount <= 99 ){
+                console.log( "Please enter a valid amount" );
+                
+            }
+
+            else if( enterAmount <= balance ){
+
+                balance -= enterAmount;
+                console.log("Balance:" + balance);
+                
             }
 
             else{
-                console.log( "Your balance is not enough to withdrawal" );
+                console.log( "Insufficient Balance" );
+                
             }
 
         }
 
         else{
-            console.log( "Your PIN is incorrect" );
+            console.log( "Incorrect Pin" );
+            
         }
 
     </script>
