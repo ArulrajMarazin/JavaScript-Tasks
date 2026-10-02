@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let productName = "Watch";
+        let enterProductName = "Watch";
+        let pricePerProduct = 499;
+        let quantity = 5;
+        let priceAfterDiscount;
+
+        if( productName == enterProductName ){
+
+            console.log( `Per ${productName} price is ${pricePerProduct}rs` );
+            console.log( `How many do you want : ${quantity}` );
+            let subTotal = pricePerProduct * quantity;
+            console.log( `Sub Total : ${subTotal}rs` );
+            
+            if( subTotal >= 1000 ){
+                priceAfterDiscount = subTotal - subTotal * 20/100;
+                console.log( `The Subtotal after discount : ${priceAfterDiscount}rs` );
+
+                if( priceAfterDiscount >= 500 ){
+                    priceAfterDiscount = priceAfterDiscount + priceAfterDiscount * 5/100;
+                    console.log( `The total after Tax added : ${priceAfterDiscount}rs` );
+                    
+                    console.log( "------------------------------------------------------" );
+                    console.log( `The final Total Amount : ${priceAfterDiscount}rs` );
+                    
+                    console.log( `The Purchase : Product Name is ${productName}, Price per product is ${pricePerProduct}, Quantity is ${quantity}, Subtotal is ${subTotal}rs, Price after discount is ${priceAfterDiscount}rs, Final Total is ${priceAfterDiscount}rs` );
+
+                }
+
+            }
+
+        }
+
+        else{
+            console.log( `Sorry we are running out of stock ${enterProductName}` );
+            
+        }
+
+    </script>
+
+</body>
+</html>

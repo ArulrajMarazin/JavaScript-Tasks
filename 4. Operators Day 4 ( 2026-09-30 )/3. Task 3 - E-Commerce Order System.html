@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let productName = "Bracelet";
+        let enterProductName = "Bracelet";
+        let productPricePer = 99;
+        let quantity = 10;
+        let discountEligiblePrice = 800;
+        let paymentMtd = "Visa";
+        let paymentMtd2 = "COD";
+
+        if( productName == enterProductName ){
+
+            console.log( `Per Piece Price : ${productPricePer}rs` );
+            let total = productPricePer * quantity;
+            console.log( `Total Price : ${total}rs` );
+
+            if( productPricePer * quantity >= discountEligiblePrice ){
+                let discount = total - total * 15/100;
+                total = discount
+                console.log( `The total price after discount : ${discount}rs` );
+                
+                if( paymentMtd || paymentMtd2 ){
+                    console.log( "Payment Successfully Completed" );
+
+                    console.log( "-------------------------------------------------------" );
+
+                    console.log( `Product Name : ${productName}` );
+                    console.log( `Units : ${quantity}` );
+                    console.log( `Total Final Price : ${total}rs` );
+                    
+                    
+                }
+
+                else{
+                    console.log( "Sorry we are not able to take this payment" );
+                    
+                }
+
+            }
+
+            else{
+                console.log( "Sorry Your not eligible for discount" );
+                
+            }
+
+        }
+
+        else{
+            console.log( `Sorry We are don't have ${productName}` );
+            
+        }
+
+
+    </script>
+
+</body>
+</html>

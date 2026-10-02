@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let productName = "Watch";
+        let enterProduct = "Watch";
+        let stock = 25;
+        let reorderQuantity = 5;
+
+
+        if( enterProduct == productName ){
+            
+            if( stock > 0 ){
+
+                if( stock <= reorderQuantity ){
+
+                    console.log( `Reorder Required ${enterProduct}` );
+                    
+
+                }
+
+                else{
+                    console.log( `Stock Available ${enterProduct}` );
+
+                    console.log( `Here is the ${productName}` );
+                    console.log( `Currently we have ${stock}` );
+                    
+                }
+
+            }
+
+            else{
+                console.log( "Sorry we are currently running out of stock " + enterProduct );
+                
+            }
+
+        }
+
+        else{
+            console.log( "No we don't have " + enterProduct );
+            
+        }
+
+    </script>
+
+</body>
+</html>

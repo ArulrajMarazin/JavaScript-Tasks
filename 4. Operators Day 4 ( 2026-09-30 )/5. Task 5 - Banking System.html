@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let customerDetails = "'Name : Arulraj' 'Age : 21' 'Residential Proof : ID Card'";
+        let verifyCustomerAccount = "'Name : Arulraj' 'Age : 21' 'Residential Proof : ID Card'";
+        let balance = 50000;
+        let deposit = 10000;
+        let withdraw = 5000;
+        let isSufficientBalanceAvailable = 2000;
+
+        if( customerDetails == verifyCustomerAccount ){
+            
+            console.log( `Balance : ${balance}rs` );
+            console.log( `How much do you wanna deposit : ${deposit}rs` );
+            
+            balance = balance + deposit;
+
+            console.log( `Balance : ${balance}rs` );
+            console.log( `How much do you wanna withdraw : ${withdraw}rs` );
+
+            if( isSufficientBalanceAvailable <= balance ){
+                
+                balance = balance - withdraw;
+                console.log( `Your current balance : ${balance}rs` );
+
+                console.log( "Take the receipt the card will follow" );
+                
+            }
+
+            else{
+                console.log( "Your balance is not sufficient for withdrawals" );
+                
+            }
+
+        }
+
+        else{
+            console.log( "Your deatils are not match please check again" );
+            
+        }
+
+    </script>
+
+</body>
+</html>

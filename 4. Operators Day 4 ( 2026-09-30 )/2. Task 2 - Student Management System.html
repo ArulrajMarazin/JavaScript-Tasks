@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let stdName = "Arulraj";
+        let enterName = "Arulraj";
+        let stdId = "SC2001";
+        let enterStdId = "SC2001"
+        let stdMarkMath = 49;
+        let stdMarkScience = 25;
+        let stdMarkEnglish = 68;
+        let totalSubs = 3
+
+        if( stdName === enterName ){
+
+            if( stdId == enterStdId ){
+
+                let total = stdMarkEnglish + stdMarkMath + stdMarkScience;
+                console.log( `Your Total marks is : ${total}` );
+                console.log( `Your Avarage marks is : ${total/totalSubs}` );
+
+                if( total >= 105 && stdMarkMath >= 35 && stdMarkEnglish >= 35 && stdMarkScience >= 35 ){
+
+                    console.log( `Student name : ${enterName}` );
+                    console.log( `Student ID : ${enterStdId}` );
+                    
+                    console.log( "Your are Passed... Congratulations...!" );
+                }
+
+                else{
+
+                    console.log( `Student name : ${enterName}` );
+                    console.log( `Student ID : ${enterStdId}` );
+                    
+                    console.log( "Your are failed... Better luck next time...!" );
+                    
+                }
+
+            }
+
+            else{
+                console.log( "Please check the student ID" );
+                
+            }
+
+        }
+
+        else{
+            console.log( "Please check the student name " );
+            
+        }
+
+    </script>
+
+</body>
+</html>
