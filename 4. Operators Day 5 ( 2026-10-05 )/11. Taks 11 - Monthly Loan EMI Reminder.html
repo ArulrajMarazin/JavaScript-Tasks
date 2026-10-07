@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let loan = true;
+        let month = 1;
+        let emi = 10000;
+        let totalEmi = 0;
+
+        if (loan) {
+
+            console.log("Loan EMI Reminder");
+            console.log("--------------------------------------");
+
+            while (month <= 12) {
+
+                console.log(`Month ${month} : EMI Due ${emi}rs`);
+
+                totalEmi = totalEmi + emi;
+
+                month++;
+
+            }
+
+            console.log("--------------------------------------");
+            console.log(`Total EMI Amount : ${totalEmi}rs`);
+
+        }
+
+        else {
+
+            console.log("No Active Loan");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

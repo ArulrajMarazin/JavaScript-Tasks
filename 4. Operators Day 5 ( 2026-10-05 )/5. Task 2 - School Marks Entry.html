@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let studentMarks = [ 92, 98, 63, 25, 76, 36, 85, 90, 65, 85, ];
+
+        let i = 0;
+        let total = 0;
+
+        while( i < studentMarks.length ){
+
+            total = total + studentMarks[i];
+            avg = total / studentMarks.length;
+            i++;
+
+            if( studentMarks[i] <= 45 ){
+                console.log( `Index : ${i} - Fail - ${studentMarks[i]}` );
+            }
+
+        }
+
+        console.log( `Total Marks is ${total}` );
+        console.log( `Avarage is ${avg}` );
+        
+
+    </script>
+
+</body>
+
+</html>

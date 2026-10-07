@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let actualPin = 2005;
+        let entertedPin = 2005;
+        let initialAmount = 50000;
+
+        while( initialAmount >= 0 ){
+
+            let withdrawalAmount = prompt( "How much you need to withdraw" );
+            console.log( `Balance : ${initialAmount}` );
+            initialAmount -= withdrawalAmount;
+            console.log( initialAmount );
+
+            if( initialAmount <= 0 ){
+                alert( "Sorry you have insufficient balance" )
+                break;
+            }
+
+        }
+
+
+    </script>
+
+</body>
+</html>

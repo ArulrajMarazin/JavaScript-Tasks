@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let i = "";
+        let order = true;
+        let orderId = i;
+        let orderStatus;
+
+        if( order ){
+
+            console.log( "Order Processing" )
+            i++;
+            console.log( `Order ID : ORD00${i}` )
+            console.log( "--------------------------------------" )
+
+            orderStatus = "Completed";
+
+            if( orderStatus === "Completed" ){
+
+                console.log( `Order ID ${i} : Order Placed` );
+
+            }
+
+            else{
+                console.log( "Your Order is in progress" );
+            }
+
+        }
+
+        else{
+            console.log( "No Orders Yet" );
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let employees = [
+            { name: "EMP001", Salary: 30000, Active: true },
+            { name: "EMP002", Salary: 15000, Active: false },
+            { name: "EMP003", Salary: 23000, Active: true },
+            { name: "EMP004", Salary: 45000, Active: false },
+        ]
+
+        let i = 0;
+        let totalExpense = 0;
+
+        while (i < employees.length) {
+            if (employees[i].Active === false) {
+                console.log( `${employees[i].name} : Inactive` );
+                i++;
+                continue;
+            }
+
+            console.log(`${employees[i].name} : Active : ${employees[i].Salary}`);
+            totalExpense += employees[i].Salary;
+
+            i++;
+            
+        }
+
+        console.log( `Total Salary Expense : ${totalExpense}` );
+
+
+    </script>
+
+</body>
+
+</html>

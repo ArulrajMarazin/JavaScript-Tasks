@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let productName = "Watch";
+        let isProductAvailable = true;
+        let stock = 5;
+        
+        if( isProductAvailable ){
+
+            if( stock >= 0 && stock <= 10 ){
+                console.log( `Buy now because... We are currently have low amount of ${productName}` )
+            }
+
+            else if( stock >= 15 ){
+                
+                console.log( `Yeah you can purchase ${productName}` );
+
+            }
+
+            else{
+                console.log( "Sorry we are currently out of stock" );
+            }
+
+        }
+
+        else{
+            console.log( "Sorry we are not have the product" );
+        }
+
+    </script>
+
+</body>
+</html>

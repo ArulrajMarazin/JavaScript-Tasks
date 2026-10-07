@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let seats = 5;
+
+        while(seats <= 5){
+            let selectSeat = prompt( "Which Seat do you need" );
+            seats--;
+            console.log( `Available Seats : ${seats}` );
+            console.log( `Your seat is ${selectSeat}` );
+
+            if( seats === 0 ){
+                alert( "House Full" );
+            }
+        }
+
+    </script>
+
+</body>
+</html>

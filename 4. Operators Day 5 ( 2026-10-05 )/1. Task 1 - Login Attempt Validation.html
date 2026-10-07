@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let correctPass = "2005";
+        let attempt = 0;
+        let maxAttampt = 3;
+        let isLoggerIn = false;
+
+        while( attempt < maxAttampt ){
+
+            let password = prompt( "Enter Your password" );
+            attempt++;
+
+            if( password === correctPass ){
+                console.log( "Successfully Logged In" );
+                isLoggerIn = true;
+                break;
+            }
+
+            else{
+                console.log( "Incorrect Password" );
+                console.log( "Attempt Used :", attempt )
+            }
+            
+        }
+
+        if( !isLoggerIn ){
+            console.log( "Account Locked" );
+        }
+
+        console.log( "Total Attempts Used :", attempt )
+
+    </script>
+
+</body>
+</html>
