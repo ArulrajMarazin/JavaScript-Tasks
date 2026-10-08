@@ -21,15 +21,16 @@
             }
 
             if( word === reversedWord ){
-                console.log( `${word} : Palindrome` );
+                return `${word} : Palindrome`;
             }
 
             else{
-                console.log( `${word} : Not - Palindrome` );
+                return `${word} : Not - Palindrome`;
             }
 
         }
-        checkPalindrome("madam");
+        let final = checkPalindrome("madam");
+        console.log( final );
 
     </script>
 
