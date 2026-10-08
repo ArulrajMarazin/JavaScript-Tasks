@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function calculateBill(){
+            let units = 123;
+
+            if( units < 0 ){
+                console.log( "Invalid units" );
+            }
+
+            else if( units <= 60 ){
+                console.log( `Your bill amount is ${units*10}` );
+            }
+
+            else if( units >= 61 && units <= 120 ){
+                console.log( `Your bill amount is ${units*15}` );
+            }
+
+            else{
+                console.log( `Your bill amount is ${units*20}` );
+            }
+        }
+        calculateBill();
+
+    </script>
+
+</body>
+</html>

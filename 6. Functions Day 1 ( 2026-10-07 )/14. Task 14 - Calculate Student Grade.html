@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function calculateGrade(){
+            let mark = 73;
+
+            if( mark < 0 ){
+                console.log( "Not valid Marks" );
+            }
+
+            if( mark >= 0 && mark < 35 ){
+                console.log( "F" );
+            }
+
+            else if( mark >= 35 && mark <= 54 ){
+                console.log( "S" );
+            }
+
+            else if( mark >= 55 && mark <= 64 ){
+                console.log( "C" );
+            }
+
+            else if( mark >= 65 && mark <= 74 ){
+                console.log( "B" );
+            }
+
+            else if( mark >= 75 && mark <= 100 ){
+                console.log( "A" );
+            }
+
+            else{
+                console.log( "Not a valid marks" );
+            }
+
+        }
+        calculateGrade();
+
+    </script>
+
+</body>
+</html>
